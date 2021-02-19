@@ -1,7 +1,38 @@
-function calculoSoma(n1, n2) {
-    var n3 = n1 + n2
+function calculoMedia() {
+    var total = 0
+    let qtd = arguments.length
 
-    return n3
+    for(let i = 0; i < qtd; i++){
+        if(typeof arguments[i] !== 'number'){
+            erro()
+            break
+        }
+        else{
+            total += arguments[i]
+        }
+    }
+    total = total / qtd
+    return total
+}
+
+function calculoSoma() {
+    var total = 0
+    let qtd = arguments.length
+
+    for(let i = 0; i < qtd; i++){
+        if(typeof arguments[i] !== 'number'){
+            erro()
+            break
+        }
+        else{
+            total += arguments[i]
+        }
+    }
+    return total
+}
+
+function erro(){
+    console.log(console.error())
 }
 
 function calculoSub(n1, n2) {
@@ -55,3 +86,20 @@ calcula(n1, n2, i)
 const elTelas = document.getElementById('root')
 
 console.log(elTelas)
+
+let resultado = testando()
+
+console.log(resultado)
+
+function calculaMedia() {
+    var numbers1 = calculoSoma(10, 5, 6, 8, 9)
+    var numbers2 = calculoSoma(1, 8, 6, 5, 9)
+    var numbers3 = calculoSoma(9, 5, 2, 7, 9)
+    var numbers4 = calculoSoma(8, 3, 7, 4, 6) 
+
+    console.log(numbers1)
+    console.log(numbers2)
+    console.log(numbers3)
+    console.log(numbers4)
+
+}
