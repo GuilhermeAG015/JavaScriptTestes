@@ -52,3 +52,6 @@ var i = 'soma'
 
 calcula(n1, n2, i)
 
+const elTelas = document.getElementById('root')
+
+console.log(elTelas)
