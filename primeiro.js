@@ -103,3 +103,5 @@ function calculaMedia() {
     console.log(numbers4)
 
 }
+
+calculaMedia()
