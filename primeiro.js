@@ -105,3 +105,5 @@ function calculaMedia() {
 }
 
 calculaMedia()
+
+console.log('4ª Dimensão')
