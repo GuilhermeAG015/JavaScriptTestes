@@ -19,4 +19,24 @@ function outrafuncao(clicks){
         img.classList.add('img')
         img.classList.remove('img2')
     }
+    if(i === 2){
+        let root = document.getElementById('root')
+        root.innerHTML = '<div><spam>Parabéns por ter desbloqueado a fase secreta</spam></div>'
+        maisOutraFuncao(root)
+    }
+}
+
+function maisOutraFuncao(root){
+    let divRoot = root
+    let inputN1 = document.getElementById('inputNumber')
+    let inputN2 = document.getElementById('inputNumber2')
+    let check1 = inputN1.textContent
+    let check2 = inputN2.nodeValue
+
+    console.log(check1)
+    console.log(check2)
+
+    // if(check1 == '' && check2 == ''){
+
+    // }
 }
