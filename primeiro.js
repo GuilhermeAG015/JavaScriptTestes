@@ -107,3 +107,12 @@ function calculaMedia() {
 calculaMedia()
 
 console.log('4ª Dimensão')
+
+var i = 0
+
+document.getElementById('calcula').addEventListener('click', function(){
+    console.log('aperta não carai')
+    i += 1
+    outrafuncao(i)
+})
+

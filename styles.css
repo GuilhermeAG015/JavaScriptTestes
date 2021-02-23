@@ -1,0 +1,11 @@
+.img{
+    width: 25%;
+    height: 25%;
+    border: 1px black solid;
+}
+
+.img2{
+    width: 50%;
+    height: 50%;
+    border: 1px black solid;
+}
