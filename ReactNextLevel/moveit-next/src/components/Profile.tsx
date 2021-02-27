@@ -6,7 +6,10 @@ export function Profile() {
             <img src='https://avatars.githubusercontent.com/u/61588741?s=400&u=2369be70f680b1b2bcf0cf05a15084b0ae3e8844&v=4' alt='Guilherme Alexandre' />
             <div>
                 <strong>Guilherme Alexandre</strong>
-                <p>Level 1</p>
+                <p>
+                    <img src='icons/level.svg' alt='level icon' />
+                    Level 1
+                </p>
             </div>
         </div>
     )
