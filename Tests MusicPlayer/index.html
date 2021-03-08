@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="displayNone">
+            <div class="container">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="exibe()">Sign in</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="player">
+                <div class="parado">
+                    <button id="anterior">Anterior</button>
+                    <button id="play" onclick="play()">Play</button>
+                    <button id="pause" onclick="pause()">Pause</button>
+                    <button id="proxima" onclick="proxima()">Proxima</button>
+                </div>
+                <br>
+                <div id="nomeMusica"></div>
+            </div>
+
+            <div id="musicaPlayer"></div>
+
+            <button type="button" class="btn btn-dark" onclick="toca()">Toque</button>
+            <audio id="musica">
+                <source
+                    src="C:/Users/guilh/Documents/Euro Truck Simulator 2/music/Avenged Sevenfold - Buried Alive - Lyrics ( 256kbps cbr ).mp3">
+            </audio>
+        </section>
+    </main>
+    <footer>
+        <!-- <div id="audios">
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <video controls>
+                <source src="D:/Backup/Downloads/Mestre Geek.mp4">
+            </video>
+        </div> -->
+
+    </footer>
+    <script src="musicas.js"></script>
+    <script src="index.js"></script>
+    <script src="tocaMusica.js"></script>
+</body>
+
+</html>
