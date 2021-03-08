@@ -39,7 +39,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengeProviderProps
 
     const [isLevelModalOpen, setIslevelModalOpen] = useState(false)
 
-    const xpToNextLvl = Math.pow((level + 1) * 4, 2)
+    const xpToNextLvl = (Math.pow((level + 1) * 4, 2) ?? 0)
 
     useEffect(() => {
         Notification.requestPermission()
